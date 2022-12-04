@@ -45,10 +45,8 @@ async function calculateScore(input: Record<string, number>) {
   return score;
 }
 
-// { partOne: 14375 }
-// { partTwo: 10274 }
-
-(async () => {
-  console.log({ partOne: await calculateScore(POSSIBLE_OUTCOMES_PART_ONE) });
-  console.log({ partTwo: await calculateScore(POSSIBLE_OUTCOMES_PART_TWO) });
-})();
+// [ 14375, 10274 ]
+Promise.all([
+  calculateScore(POSSIBLE_OUTCOMES_PART_ONE),
+  calculateScore(POSSIBLE_OUTCOMES_PART_TWO),
+]).then(console.log);

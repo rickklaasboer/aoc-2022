@@ -48,7 +48,5 @@ async function partTwo() {
   return sum;
 }
 
-// { partOne: 584, partTwo: 933 }
-(async () => {
-  console.log({ partOne: await partOne(), partTwo: await partTwo() });
-})();
+// [ 584, 933 ]
+Promise.all([partOne(), partTwo()]).then(console.log);

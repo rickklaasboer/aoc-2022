@@ -69,14 +69,10 @@ async function partTwo(): Promise<number> {
       }
     }
     matched = [];
-
-    // total += getPriority(match);
   }
 
   return total;
 }
 
-(async () => {
-  //   partTwo();
-  console.log({ partOne: await partOne(), partTwo: await partTwo() });
-})();
+// [ 7785, 2633 ]
+Promise.all([partOne(), partTwo()]).then(console.log);

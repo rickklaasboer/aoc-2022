@@ -46,7 +46,7 @@ async function partOne(): Promise<number> {
 }
 
 async function partTwo(): Promise<number> {
-  const readlines = createReadlineInterface(__dirname + "/data.txt");
+  const readlines = createReadlineInterface(__dirname + "/tim.txt");
   const lines: string[] = [];
   let total = 0;
 
@@ -75,4 +75,4 @@ async function partTwo(): Promise<number> {
 }
 
 // [ 7785, 2633 ]
-Promise.all([partOne(), partTwo()]).then(console.log);
+Promise.all([/*partOne(),*/ partTwo()]).then(console.log);

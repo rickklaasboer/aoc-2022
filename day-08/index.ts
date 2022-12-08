@@ -2,7 +2,7 @@ import { Interface as ReadLineInterface } from "readline";
 
 import { createReadlineInterface } from "../util";
 
-const FILE_PATH = __dirname + "/data.txt";
+const FILE_PATH = __dirname + "/data_jennifer.txt";
 
 async function createGrid(readLines: ReadLineInterface) {
   const lines: number[][] = [];
